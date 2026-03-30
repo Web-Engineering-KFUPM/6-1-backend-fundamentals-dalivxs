@@ -5,9 +5,9 @@ const app = express();
 
 app.use(cors());
 
-// TODO 5: Create the home route "/"
-
-
+app.get('/', (req, res) => {
+  res.send('Hello from the back-end server');
+});
 
 // TODO 6: Create the "/about" route
 
